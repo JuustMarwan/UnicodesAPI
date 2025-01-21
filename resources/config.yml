@@ -1,0 +1,5 @@
+---
+# If This Is Set true Unicode Name Written In {} While PlayerChatEvent() Will Be Replaced With Actual Unicode Characters.
+# But If It's Set False Unicode Name Won't Be Replaced.
+Unicode-Auto-Replacing: true
+...
