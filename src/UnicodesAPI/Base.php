@@ -148,8 +148,6 @@ class Base extends PluginBase{
   public function onLoad() : void{
 	  
     self::$instance = $this;
-	
-    $this->doOverride();
 	  
   }
 
@@ -301,8 +299,5 @@ class Base extends PluginBase{
     return str_replace(array_keys($replacements), $replacements, $text);
 	  
   }
-
-  private function doOverride() : void{
-	  
-  }
+	
 }
