@@ -5,7 +5,7 @@
 <h2 align="center">UnicodesAPI</h2>
 
   <p align="center">
-    Access And Use Minecraft Bedrock Unicode Characters At Ease <img src="images/heart.png" alt="heart" width="auto" height="13">.
+    A Pocketmine Plugin For Accessing And Using Minecraft Bedrock Unicode Characters At Ease <img src="images/heart.png" alt="heart" width="auto" height="13">.
     <br />
     <a href="https://github.com/JuustMarwan/UnicodesAPI/releases">Releases</a>
     ·
