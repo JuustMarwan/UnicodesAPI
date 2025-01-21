@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/JuustMarwan/UnicodesAPI">
-    <img src="images/crafting-table.png" alt="Logo" width="auto" height="70">
+    <img src="icon.png" alt="Logo" width="auto" height="70">
   </a>
 <h2 align="center">UnicodesAPI</h2>
 
