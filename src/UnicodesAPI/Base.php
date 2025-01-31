@@ -160,8 +160,6 @@ class Base extends PluginBase{
 
     $this->getServer()->getPluginManager()->registerEvents(new ChatListener(), $this);
 	  
-    $this->getLogger()->notice('UnicodesAPI Enabled Successfully!');
-	  
   }
 
   public static function replace(string $text): string {
