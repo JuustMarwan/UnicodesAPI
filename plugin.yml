@@ -1,6 +1,6 @@
 name: UnicodesAPI
 author: JuustMarwan
 description: "Access And Use Minecraft Bedrock Unicode Characters At Ease."
-main: UnicodesAPI\Base
+main: JuustMarwan\UnicodesAPI\Base
 version: 1.0.0
 api: 5.0.0

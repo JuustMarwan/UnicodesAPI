@@ -2,9 +2,9 @@
 
 declare(strict_types = 1);
 
-namespace UnicodesAPI;
+namespace JuustMarwan\UnicodesAPI;
 
-use UnicodesAPI\ChatListener;
+use JuustMarwan\UnicodesAPI\ChatListener;
 
 use pocketmine\plugin\PluginBase;
 

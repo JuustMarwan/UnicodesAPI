@@ -1,13 +1,13 @@
 <?php
 
-namespace UnicodesAPI;
+namespace JuustMarwan\UnicodesAPI;
 
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerChatEvent;
 use pocketmine\plugin\Plugin;
 use pocketmine\utils\TextFormat;
 
-use UnicodesAPI\Base;
+use JuustMarwan\UnicodesAPI\Base;
 
 class ChatListener implements Listener {
   
