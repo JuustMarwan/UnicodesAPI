@@ -139,32 +139,7 @@ class Base extends PluginBase{
   public const RIFT_X_BUTTON = '';
   public const RIFT_Y_BUTTON = '';
 
-  public static function getInstance() : Base{
-	  
-    return self::$instance;
-	  
-  }
-
-  public function onLoad() : void{
-	  
-    self::$instance = $this;
-	  
-  }
-
-  public function onEnable() : void{
-
-    $this->saveDefaultConfig();
-    $config = $this->getConfig()->getAll();
-
-    self::$autoReplacing = $config["Unicode-Auto-Replacing"];
-
-    $this->getServer()->getPluginManager()->registerEvents(new ChatListener(), $this);
-	  
-  }
-
-  public static function replace(string $text): string {
-	  
-    $replacements = [
+  const $characterReplacements = [
       "{MINECOIN}" => "",
       "{CODE_BUILDER_BUTTON}" => "",
       "{TOKEN}" => "",
@@ -293,9 +268,42 @@ class Base extends PluginBase{
       "{RIFT_X_BUTTON}" => "",
       "{RIFT_Y_BUTTON}" => ""
     ];
+
+  public static function getInstance() : Base{
 	  
-    return str_replace(array_keys($replacements), $replacements, $text);
+    return self::$instance;
 	  
+  }
+
+  public function onLoad() : void{
+	  
+    self::$instance = $this;
+	  
+  }
+
+  public function onEnable() : void{
+
+    $this->saveDefaultConfig();
+    $config = $this->getConfig()->getAll();
+
+    self::$autoReplacing = $config["Unicode-Auto-Replacing"];
+
+    $this->getServer()->getPluginManager()->registerEvents(new ChatListener(), $this);
+	  
+  }
+
+  public static function replace(string $text): string {
+  
+    $lowertext = strtolower($text);
+	
+    if (array_key_exists($lowertext, self::characterReplacements)) {
+	
+      return str_replace(array_keys(self::characterReplacements), self::characterReplacements, $lowertext);
+      
+    }
+        
+    return $text;
+	
   }
 	
 }
