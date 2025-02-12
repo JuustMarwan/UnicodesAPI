@@ -19,15 +19,14 @@
 </div>
 <br />
 
-### Before Using UnicodesAPI:
+### Before & After Using:
 ![](./images/before.png)
-
-### After Using UnicodesAPI:
 ![](./images/after.png)
 
 <br />
 
-### Using Unicode Character:
+## Using A Unicode Character:
+To use a unicode character you must know the name of the unicode by looking at 'In-Code Name' at 'Supported Character List' below.
 ```php
 use UnicodesAPI/Base as UnicodesAPI;
 
@@ -35,20 +34,20 @@ echo UnicodesAPI::MINECOIN;
 sendMessage(UnicodesAPI::MINECOIN);
 ```
 
-### Using **replace()** function:
-The replace function will replace the unicode character name put in curly braces in the string given.
+## Using **replace()** function:
+The replace function will replace the unicode character name put either lower or capital in curly braces in the string given.
 ```php
 use UnicodesAPI/Base as UnicodesAPI;
 
-//Method 1
+#Method 1
 UnicodesAPI::replace("{MINECOIN} is a currency {HEART}.");
 
-//Method 2
+#Method 2
 $message = $event->getMessage();
 UnicodesAPI::replace($message);
 ```
 
-### Config or Settings:
+## Config or Settings:
 ```yml
 ---
 # If This Is Set true Unicode Name Written In {} While PlayerChatEvent() Will Be Replaced With Actual Unicode Characters.
